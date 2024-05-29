@@ -17,7 +17,6 @@ const db = mysql.createConnection({
 app.get('/', (req, res) => {
     res.send('Welcome to my application');
 });
-
 // Route handler for signing up
 app.post('/signup', (req, res) => {
     const { name, email, password } = req.body;
